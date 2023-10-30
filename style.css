@@ -1,0 +1,85 @@
+body{
+    background: url('img/back.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+form, .texto{
+    width: 40%;
+    padding: 2rem 5rem;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 1.5rem;
+}
+h1{
+    text-align: center;
+    font-weight: 500;
+}
+input{
+    padding: 0.2rem;
+    margin: 0.7rem 0;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 0.2rem;
+    flex: 1 1 50%;
+}
+textarea, select{
+    padding: 0.2rem;
+    margin: 0.7rem 0;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 0.2rem;
+    flex: 1 1 50%;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+select{
+    width: 50%;
+}
+label{
+    font-size: 1.3rem;
+    flex: 1 1 50%;
+}
+.desc{
+    flex: 1 1 50%;
+    display: flex;
+    align-items: start;
+}
+
+.campo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit{
+    text-align: center;
+    margin: 1rem 0;
+}
+
+input[type='submit']{
+    background: #0176D3;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    
+}
+
+input[type='submit']:hover{
+    cursor: pointer;
+    /* transform: scale(1.02); */
+    background: #0B5CAB;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 2rem;
+}
+p{
+    font-weight: 400;
+    font-size: 1.3rem;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Engenharia de Soluções</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+        
+    <form
+      action="https://dreamxp--es.sandbox.my.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8&orgId=00DDC0000008vIr"
+      method="POST"
+    >
+    <h1>Criar um caso:</h1>
+      <input type="hidden" name="orgid" value="00DDC0000008vIr" />
+      <input type="hidden" name="retURL" value="http://127.0.0.1:5500/caso-criado/" />
+
+      <!--  ----------------------------------------------------------------------  -->
+      <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
+      <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
+      <!--  <input type="hidden" name="debug" value=1>                              -->
+      <!--  <input type="hidden" name="debugEmail"                                  -->
+      <!--  value="eng.solucao@dreamxp.com.br">                                     -->
+      <!--  ----------------------------------------------------------------------  -->
+        <div class="campo">
+      <label for="name">Nome do contato</label
+      ><input
+        id="name"
+        maxlength="80"
+        name="name"
+        size="20"
+        type="text"
+      />
+    </div>
+    <div class="campo">
+      <label for="email">Email</label
+      ><input
+        id="email"
+        maxlength="80"
+        name="email"
+        size="20"
+        type="text"
+      />
+    </div>
+    <div class="campo">
+      <label for="phone">Telefone</label
+      ><input
+        id="phone"
+        maxlength="40"
+        name="phone"
+        size="20"
+        type="text"
+      />
+    </div>
+    <div class="campo">
+    <label for="recordType">Motivo</label>
+    <select  id="recordType" name="recordType"><option value="">-- Nenhum --</option><option value="012DC000001JOD7">Atendimento</option>
+        <option value="012DC000001JOCs">Financeiro</option>
+        <option value="012DC000001JOCx">Ouvidoria (sugestão)</option>
+        <option value="012DC000001JOD2">Pesquisa de satisfação</option>
+        <option value="012DC000001JOCi">Vendas</option>
+        </select>
+    </div>
+    <div class="campo">
+      <label for="subject">Assunto</label
+      ><input
+        id="subject"
+        maxlength="80"
+        name="subject"
+        size="20"
+        type="text"
+      />
+    </div>
+    <div class="campo">
+      <div class="desc"><label for="description">Descrição</label></div>
+      <textarea name="description"></textarea>
+    </div>
+    <div class="submit">
+      <input type="submit" name="submit" />
+      </div>
+    </form>
+  </body>
+</html>
