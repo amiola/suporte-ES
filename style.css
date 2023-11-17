@@ -12,12 +12,11 @@ body{
 
 form, .texto{
     width: 40%;
-    background: rgba(255, 255, 255, 0.65);
+    background: rgba(255, 255, 255, 0.9);
     border-radius: 1.5rem;
 }
 .head, .head2{
     width: 100%;
-    
     border-radius: 1.5rem 1.5rem 0  0;
     display: flex;
     flex-direction: row;
@@ -42,25 +41,16 @@ h1{
     flex: 3 1 10rem;
     margin-left: -4rem;
 }
-input{
+input, textarea, select{
     padding: 0.2rem;
     margin: 0.7rem 0;
     font-size: 1rem;
     background: rgba(255, 255, 255, 0.8);
-    border: none;
+    border: 1px solid lightgray;
     border-radius: 0.2rem;
     flex: 1 1 50%;
 }
-textarea, select{
-    padding: 0.2rem;
-    margin: 0.7rem 0;
-    background: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-radius: 0.2rem;
-    flex: 1 1 50%;
-    font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
-}
+
 .campos{
     padding: 2rem 5rem;
 }
@@ -87,7 +77,7 @@ label{
 
 .submit{
     text-align: center;
-    margin: 1rem 0;
+    margin-top: 1.5rem;
 }
 
 input[type='submit']{
@@ -96,7 +86,7 @@ input[type='submit']{
     border-radius: 0.5rem;
     color: white;
     padding: 0.5rem 1rem;
-    
+    margin: 0;
 }
 
 input[type='submit']:hover{
@@ -119,5 +109,5 @@ p{
 }
 
 .agrad{
-    background: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
 }
